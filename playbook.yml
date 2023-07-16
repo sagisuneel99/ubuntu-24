@@ -6,6 +6,7 @@
       apt:
         name: apache2
         state: absent
+
     - name: install nginx
       apt:
         name: nginx

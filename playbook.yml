@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+    - name: install apache2
+      apt:
+        name: apache2
+        state: absent
+    - name: install nginx
+      apt:
+        name: nginx
+        state: latest
